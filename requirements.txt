@@ -1,4 +1,4 @@
-rasa
+rasa==3.6.20
 pyTelegramBotAPI
 requests
 python-dotenv
