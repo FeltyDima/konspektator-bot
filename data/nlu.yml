@@ -1,0 +1,49 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - привет
+    - здравствуйте
+    - старт
+    - /start
+
+- intent: about_developer
+  examples: |
+    - кто тебя сделал?
+    - кто разработчик?
+    - автор бота
+
+- intent: choose_summary
+  examples: |
+    - Сделать конспект
+    - конспект
+
+- intent: choose_terms
+  examples: |
+    - Выделить термины
+    - термины
+
+- intent: choose_explain
+  examples: |
+    - Объяснить просто
+    - для чайников
+
+- intent: inform_text
+  examples: |
+    - [Текст лекции про биологию...](text_content)
+    - вот текст: [Нейросети это математические модели...](text_content)
+    - [Любой длинный текст который пришлет пользователь](text_content)
+
+- intent: ask_developer
+  examples: |
+    - кто разработчик?
+    - о разработчике
+    - кто тебя создал?
+    - инфо о создателе
+
+- intent: greet
+  examples: |
+    - /start
+    - старт
+    - начать

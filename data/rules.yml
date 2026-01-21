@@ -1,0 +1,32 @@
+version: "3.1"
+
+rules:
+- rule: Say hello
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: About dev
+  steps:
+  - intent: about_developer
+  - action: utter_about_developer
+
+- rule: Пользователь выбрал конспект
+  steps:
+    - intent: choose_summary
+    - action: action_gigachat_summary
+
+- rule: Пользователь выбрал термины
+  steps:
+    - intent: choose_terms
+    - action: action_gigachat_terms
+
+- rule: Пользователь выбрал объяснение
+  steps:
+    - intent: choose_explain
+    - action: action_gigachat_explain
+
+- rule: Greeting
+  steps:
+    - intent: greet
+    - action: utter_greet

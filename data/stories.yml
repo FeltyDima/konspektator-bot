@@ -1,0 +1,23 @@
+version: "3.1"
+
+stories:
+- story: User sends text and asks for summary
+  steps:
+  - intent: inform_text
+  - action: utter_text_received
+  - intent: choose_summary
+  - action: action_gigachat_summary
+
+- story: User sends text and asks for terms
+  steps:
+  - intent: inform_text
+  - action: utter_text_received
+  - intent: choose_terms
+  - action: action_gigachat_terms
+
+- story: User sends text and asks for explanation
+  steps:
+  - intent: inform_text
+  - action: utter_text_received
+  - intent: choose_explain
+  - action: action_gigachat_explain

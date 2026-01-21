@@ -1,0 +1,4 @@
+rasa
+pyTelegramBotAPI
+requests
+python-dotenv
